@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchbangQ Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+   
+    <link rel="stylesheet" href="assets/css/survey.css">
+    
+</head>
+<body>
+ 
+    <a href="superadmin.html" target="_blank" style="margin: 20px;">
+     
+     <button class="btn btn-dark"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
+    </a>
+  </div>
+    <div id="form-container">
+        <header>
+          <div id="logo">
+            <img id="logo-img" src="assets/images/favicon.png" style="border: 1px solid white;">
+          </div>
+      
+          <h1 id="title">SchbangQ Survey Form</h1>
+          <p id="description">We would love to hear from you! Please take a moment to let us know about your experience at SchbangQ.</p>
+          <h4><i>All answers will be kept strictly confidential.</i></h4>
+        </header>
+      
+        <form id="survey-form" action="">
+      
+          <div class="input-group text-group">
+            <label for="name" id="name-label" class="question">Name*</label>
+            
+            <input type="text" id="name" class="input-box" name="name" placeholder="Enter your name" required></input>
+          </div>
+      
+          <div class="input-group email-group">
+            <label for="email" id="email-label" class="question">E-mail*</label>
+            
+            <input type="email" id="email" class="input-box" name="email" placeholder="Enter your email" required></input>
+          </div>
+      
+          <div class="input-group number-grop">
+          <label for="number" id="number-label" class="question">Your age<span style="font-size: 20px;">(optional)</span></label>
+            
+          <input type="number" id="number" class="input-box" min="12" max="99" name="age" placeholder="Enter your Age"></input>
+          </div>
+      
+          <div class=" input-group checkbox-group">
+            <p class="question">What is your gender?</p>
+      
+            <label>
+              <input type="checkbox" value="male" name="gender">
+              Male
+            </label>
+      
+            <label>
+              <input type="checkbox" value="female" name="gender">
+              Female
+            </label>
+      
+            <label>
+              <input type="checkbox" value="non-binary" name="gender">
+              Other
+            </label>
+      
+            <label>
+              <input type="checkbox" value="transgender" name="gender">
+              I prefer not to say
+            </label>
+          </div>
+      
+          <div class="input-group select-group">
+            <label for="dropdown" class="question">Job Level</label>
+            <select id="dropdown" class="input-box1" name="frequency">
+              <option disabled value selected>Select an option</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+              <option value="lead">Lead</option>
+              <option value="manager">Manager</option>
+              <option value="executive">Executive</option>
+            </select>
+          </div>
+
+          <div class="input-group number-grop">
+            <label for="number" id="number-label" class="question">How long have you been working for the company*</label>
+              
+            <input type="number" id="number" class="input-box1" min="1" max="25" name="duration" placeholder="Enter the duration"></input>
+          </div>
+
+          <div class="leftTab">
+            <div class="labels">
+              <label for="assessment1" id="tab1-label" class="question"> How meaningful is your work*</label>
+            </div>
+            <div class="rightTab">
+              <div class="tabs">
+                <div class="tab">
+                  <input class="assessment" id="tab-1" type="radio" name="tab-group-1" />
+                  <label for="tab-1">0</label>
+                  
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-2" type="radio" name="tab-group-1" />
+                  <label for="tab-2">1</label>
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-3" type="radio" name="tab-group-1" />
+                  <label for="tab-3">2</label>
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-4" type="radio" name="tab-group-1" />
+                  <label for="tab-4">3</label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="leftTab">
+            <div class="labels">
+              <label for="assessment2" id="tab2-label" class="question">How much does your job give you a sense of personal satisfaction*</label>
+            </div>
+            <div class="rightTab">
+              
+              <div class="tabs">
+                <div class="tab">
+                  <input class="assessment" id="tab-5" type="radio" name="tab-group-2" />
+                  <label for="tab-5">0</label>
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-6" type="radio" name="tab-group-2" />
+                  <label for="tab-6">1</label>
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-7" type="radio" name="tab-group-2" />
+                  <label for="tab-7">2</label>
+                </div>
+    
+                <div class="tab">
+                  <input class="assessment" id="tab-8" type="radio" name="tab-group-2" />
+                  <label for="tab-8">3</label>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+            <br>
+      
+          <div class="input-group radio-group">
+            <p class="question">How likely are you to look within the company for your next position*</p>
+      
+            <label>
+              <input type="radio" value="very-satisfied" name="equipments">Not likely
+            </label>
+      
+            <label>
+              <input type="radio" value="satisfied" name="equipments">
+              Maybe
+            </label>
+      
+            <label>
+              <input type="radio" value="neutral" name="equipments">
+              Extremely likely
+            </label>
+      
+            <label>
+              <input type="radio" value="dissatisfied" name="equipments">
+              I prefer not to say
+            </label>
+          </div>
+      
+          <div class="input-group checkbox-group">
+            <p class="question">Things that should be improved in the future</br> (Check all that apply)</p>
+      
+            <label>
+              <input type="checkbox" value="very-satisfied" name="trainers">
+              Opportunites for Growth
+            </label>
+      
+            <label>
+              <input type="checkbox" value="satisfied" name="trainers">
+              Compensation and Benefits
+            </label>
+      
+            <label>
+              <input type="checkbox" value="neutral" name="trainers">
+              Career Development
+            </label>
+      
+            <label>
+              <input type="checkbox" value="dissatisfied" name="trainers">
+              Relationship with Management
+            </label>
+      
+            <label>
+              <input type="checkbox" value="very-dissatisfied" name="trainers">
+              Work Environment
+            </label>
+
+            <label>
+              <input type="checkbox" value="very-dissatisfied" name="trainers">
+              Diversity and Inclusion
+            </label>
+
+            <label>
+              <input type="checkbox" value="very-dissatisfied" name="trainers">
+              Food and Snacks(Canteen)
+            </label>
+      
+          </div>
+      
+          <div class="input-group radio-group">
+            <p class="question">How satisfied are you with the <strong>cleanliness of the gym</strong>?</p>
+      
+            <label>
+              <input type="radio" value="very-satisfied" name="cleanliness">
+              Very Satisfied
+            </label>
+      
+            <label>
+              <input type="radio" value="satisfied" name="cleanliness">
+              Satisfied
+            </label>
+      
+            <label>
+              <input type="radio" value="neutral" name="cleanliness">
+              Neutral
+            </label>
+      
+            <label>
+              <input type="radio" value="dissatisfied" name="cleanliness">
+              Dissatisfied
+            </label>
+      
+            <label>
+              <input type="radio" value="very-dissatisfied" name="cleanliness">
+              Very Dissatisfied
+            </label>
+      
+          </div>
+      
+          <div class="input-group">
+            <p class="question">Any Comments, Concerns or Suggestions?<br><small>Remember that answers will be treated with the strictest confidence.</small></p>
+            <textarea class="input-box textarea" name="additional-msg" placeholder="Type here..."></textarea>
+            </div>
+      
+          <button type="submit" id="submit">
+            Submit Form
+          </button>
+      
+        </form>
+      </div>
+</body>
+</html>
